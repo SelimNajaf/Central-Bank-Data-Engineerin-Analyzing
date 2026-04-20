@@ -113,7 +113,7 @@ class CsvToSqlPipeline:
                 name=table_name,
                 con=self.engine,
                 if_exists="replace",
-                index=True
+                index=False
             )
             logger.info(f"'{table_name}' cədvəlinə yükləmə uğurla tamamlandı.")
         except SQLAlchemyError as e:
