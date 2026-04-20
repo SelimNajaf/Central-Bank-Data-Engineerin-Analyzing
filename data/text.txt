@@ -1,0 +1,19 @@
+🔹 1 Analitika layihəsi (Dashboard / BI)
+
+Məqsəd: “ölkənin iqtisadi + bank sistemi overview”
+
+➡️ İstifadə edəcəyin bölmələr:
+	•	1.1 – Əsas makroiqtisadi göstəricilər
+	•	1.3 – Dövlət büdcəsi
+	•	1.4 – 1.5 – Tədiyə balansı + xarici ticarət
+	•	1.6 – Effektiv məzənnə
+
+➡️ Bank sistemi üçün əlavə layer:
+	•	2.11 – 2.13 – Depozitlər
+	•	2.6 və 2.8 – Kredit strukturu
+
+➡️ (optional amma güclü):
+	•	5.2 – 5.3 – Bank sektorunun balans + P&L
+	•	5.6 – NPL (çox vacib insight verir)
+
+👉 Bu set sənə full economic + banking dashboard qurmağa kifayətdir.
