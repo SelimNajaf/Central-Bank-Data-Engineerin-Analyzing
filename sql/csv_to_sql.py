@@ -19,7 +19,6 @@ class DataLoadError(Exception):
     """Məlumatların yüklənməsi zamanı baş verən xətalar üçün xüsusi istisna (exception) sinfi."""
     pass
 
-
 class CsvToSqlPipeline:
     """
     CSV fayllarını oxumaq, təmizləmək və SQL verilənlər bazasına yükləmək üçün pipeline.
@@ -88,6 +87,7 @@ class CsvToSqlPipeline:
                     .astype(str)
                     .str.replace('.', '', regex=False)
                     .str.replace(',', '.', regex=False)
+                    .str.replace('%','', regex=False)
                 )
                 df[col] = pd.to_numeric(df[col], errors='coerce')
                 
@@ -113,7 +113,7 @@ class CsvToSqlPipeline:
                 name=table_name,
                 con=self.engine,
                 if_exists="replace",
-                index=False
+                index=True
             )
             logger.info(f"'{table_name}' cədvəlinə yükləmə uğurla tamamlandı.")
         except SQLAlchemyError as e:
